@@ -7,8 +7,8 @@ This repository contains the code and data for a mini-project on facial expressi
 
     |No.| Student Name    | Student ID |
     | --------| -------- | ------- |
-    |1|||
-    |2|||
+    |1|Đỗ Thành Nguyên|21110349|
+    |2|Chu Nguyễn Gia Khánh|21110319|
     |3|||
     |4|||
 
