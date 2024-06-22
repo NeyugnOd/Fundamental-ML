@@ -32,9 +32,72 @@ This project is designed to be completed in the following steps:
 3. **Complete the Tasks**: Open the ```notebooks/EDA.ipynb``` notebook in your Jupyter Notebook environment. The notebook is designed to guide you through various tasks, including:
     
     1. Prerequisite
+    
+    ![image](./materials/label_distribution.jpg)
+   
+    - The data is imbalanced.
+
     2. Principle Component Analysis
-    3. Image Classification
-    4. Evaluating Classification Performance 
+    
+    ![image](./materials/pca_2d.jpg)
+
+    - Visualize the data projected onto two principal components.
+
+   ![image](./materials/optimal_components.jpg)
+
+   
+    - Determine the optimal number of principal components using pca.explained_variance_ratio_(95%).
+   
+    4. Image Classification
+    
+	- Image classification on PCA data and resized data.
+
+Model Training:
+- Logistic Regression
+- SVM
+- Random Forest
+- MLP
+
+	5. Evaluating Classification Performance
+#### Logistic Regression:
+- PCA Data:
+  ```
+  Precision: 0.37, Recall: 0.38, F1-score: 0.35, Accuracy: 0.38
+  ```
+- Resized Data:
+  ```
+  Precision: 0.36, Recall: 0.38, F1-score: 0.36, Accuracy: 0.38
+  ```
+
+#### SVM:
+- PCA Data:
+  ```
+  Precision: 0.47, Recall: 0.48, F1-score: 0.47, Accuracy: 0.48
+  ```
+- Resized Data:
+  ```
+  Precision: 0.46, Recall: 0.46, F1-score: 0.44, Accuracy: 0.46
+  ```
+
+#### Random Forest:
+- PCA Data:
+  ```
+  Precision: 0.48, Recall: 0.39, F1-score: 0.34, Accuracy: 0.39
+  ```
+- Resized Data:
+  ```
+  Precision: 0.48, Recall: 0.46, F1-score: 0.43, Accuracy: 0.46
+  ```
+
+#### MLP:
+- PCA Data:
+  ```
+  Precision: 0.35, Recall: 0.35, F1-score: 0.34, Accuracy: 0.35
+  ```
+- Resized Data:
+  ```
+  Precision: 0.23, Recall: 0.24, F1-score: 0.22, Accuracy: 0.24
+  ``` 
 
     Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
 
